@@ -14,6 +14,9 @@
 		A0B8B45219F389D600FB075E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B8B45119F389D600FB075E /* Images.xcassets */; };
 		A0B8B45519F389D600FB075E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B8B45319F389D600FB075E /* LaunchScreen.xib */; };
 		A0B8B46119F389D600FB075E /* BatchReporterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B8B46019F389D600FB075E /* BatchReporterDemoTests.m */; };
+		A0B8B46C19F38AD800FB075E /* KBLogReporterService.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B8B46B19F38AD800FB075E /* KBLogReporterService.m */; };
+		A0B8B47019F38BFB00FB075E /* KBLogEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B8B46F19F38BFB00FB075E /* KBLogEntity.m */; };
+		A0B8B47319F3907200FB075E /* KBLogReporterFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B8B47219F3907200FB075E /* KBLogReporterFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		A0B8B45A19F389D600FB075E /* BatchReporterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatchReporterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B8B45F19F389D600FB075E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B8B46019F389D600FB075E /* BatchReporterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatchReporterDemoTests.m; sourceTree = "<group>"; };
+		A0B8B46A19F38AD800FB075E /* KBLogReporterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBLogReporterService.h; path = BatchReporterDemo/LogReporter/KBLogReporterService.h; sourceTree = "<group>"; };
+		A0B8B46B19F38AD800FB075E /* KBLogReporterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBLogReporterService.m; path = BatchReporterDemo/LogReporter/KBLogReporterService.m; sourceTree = "<group>"; };
+		A0B8B46E19F38BFB00FB075E /* KBLogEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBLogEntity.h; path = BatchReporterDemo/LogReporter/KBLogEntity.h; sourceTree = "<group>"; };
+		A0B8B46F19F38BFB00FB075E /* KBLogEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBLogEntity.m; path = BatchReporterDemo/LogReporter/KBLogEntity.m; sourceTree = "<group>"; };
+		A0B8B47119F3907200FB075E /* KBLogReporterFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBLogReporterFetcher.h; path = BatchReporterDemo/LogReporter/KBLogReporterFetcher.h; sourceTree = "<group>"; };
+		A0B8B47219F3907200FB075E /* KBLogReporterFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBLogReporterFetcher.m; path = BatchReporterDemo/LogReporter/KBLogReporterFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		A0B8B43819F389D600FB075E = {
 			isa = PBXGroup;
 			children = (
+				A0B8B46D19F38ADC00FB075E /* LogReporter */,
 				A0B8B44319F389D600FB075E /* BatchReporterDemo */,
 				A0B8B45D19F389D600FB075E /* BatchReporterDemoTests */,
 				A0B8B44219F389D600FB075E /* Products */,
@@ -117,6 +127,19 @@
 				A0B8B45F19F389D600FB075E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0B8B46D19F38ADC00FB075E /* LogReporter */ = {
+			isa = PBXGroup;
+			children = (
+				A0B8B46A19F38AD800FB075E /* KBLogReporterService.h */,
+				A0B8B46B19F38AD800FB075E /* KBLogReporterService.m */,
+				A0B8B47119F3907200FB075E /* KBLogReporterFetcher.h */,
+				A0B8B47219F3907200FB075E /* KBLogReporterFetcher.m */,
+				A0B8B46E19F38BFB00FB075E /* KBLogEntity.h */,
+				A0B8B46F19F38BFB00FB075E /* KBLogEntity.m */,
+			);
+			name = LogReporter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B8B46C19F38AD800FB075E /* KBLogReporterService.m in Sources */,
 				A0B8B44D19F389D600FB075E /* ViewController.m in Sources */,
 				A0B8B44A19F389D600FB075E /* AppDelegate.m in Sources */,
+				A0B8B47019F38BFB00FB075E /* KBLogEntity.m in Sources */,
+				A0B8B47319F3907200FB075E /* KBLogReporterFetcher.m in Sources */,
 				A0B8B44719F389D600FB075E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
